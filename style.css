@@ -19,9 +19,25 @@ body {
             text-align: center;
             box-sizing: border-box;
         }
-        .question {
+        .qiuzStat{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
             font-size: 1.2em;
+        }
+        .questionNumbering{
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            color: #ff5722;
+
+        }
+        .question {
+            
             margin-bottom: 20px;
+            font-style: italic;
+            color: #0056b3;
         }
         .options {
             display: flex;
@@ -41,8 +57,9 @@ body {
             color: #fff;
         }
          .timer {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            padding-top: 10px;
             color: #ff5722;
         }
          .result {

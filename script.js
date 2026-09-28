@@ -166,6 +166,7 @@ const quizData = [
         const resultEl = document.querySelector('.result');
         const scoreEl = document.getElementById('score');
         const restartBtn = document.querySelector('.restart-btn');
+        const questionNumbering = document.querySelector('.questionNumbering');
 
 
         // Function to load the question
@@ -183,7 +184,9 @@ const quizData = [
 
             const currentQuiz = quizData[currentQuestion];
             const questionNo = currentQuestion + 1;
-            questionEl.textContent = `Question ${questionNo} of  ${quizData.length}  `
+            questionNumbering.textContent = `Question ${questionNo} of  ${quizData.length}  `
+            questionEl.textContent = currentQuiz.question;
+
             optionsEl.innerHTML = '';  // Clear previous options
 
             currentQuiz.options.forEach(option => {
